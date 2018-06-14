@@ -44,12 +44,14 @@
 
             if (userGuess === computerGuess) {
                 wins++;
-                guesses = 9;
+                guesses = 9; 
+                lettersused = [];
             } 
 
                 if (guesses == 1) {
                     losses++;
                     guesses = 9;
+                    lettersused = [];
                 }
             
             else if (userGuess !== computerGuess) {
